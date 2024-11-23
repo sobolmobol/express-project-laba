@@ -1,0 +1,19 @@
+const express = require("express");
+const app = express();
+const mustacheExpress = require('mustache-express');
+const indexRoutes = require('./routes/index');
+const path = require('path');
+
+app.engine('mustache', mustacheExpress(path.join(__dirname, '/views/partials'), '.mustache'));
+app.set('view engine', 'mustache');
+app.set('views', path.join(__dirname, '/views'));
+//app.engine('mustache', mustache(VIEWS_PATH + '/partials', '.mustache'));
+//app.engine('mustache', mustache(VIEWS_PATH + '/layouts', '.mustache'));
+
+app.use('/', indexRoutes);
+
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.listen(3000, () => {
+    console.log('server is running');
+});
