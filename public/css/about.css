@@ -1,0 +1,85 @@
+.page-title {
+    color: #444343;
+    margin-bottom: 10px;
+}
+
+.content {
+    margin-bottom: 20px;
+    text-align: justify;
+    text-transform: none;
+    font-size: 16px;
+}
+.mission-title{
+    background-color: #fff;
+    border-radius: 6px;
+    color: #755A57;
+    text-align: center;
+}
+.mission{
+    background-color: #755A57;
+    border-radius: 4px;
+    color: #fff;
+    padding: 10px 15px;
+}
+.values {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.values li {
+    background: #755A57;
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.intro{
+    display: flex;
+    justify-self: space-between;
+    gap: 30px;
+}
+
+.services {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.services li {
+    flex: 1 1 calc(50% - 10px);
+    background: #f3f3f3;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.services li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team {
+    margin-top: 30px;
+}
+
+.team h3 {
+    margin: 15px 0 5px;
+    color: #444;
+    font-size: 18px;
+}
+
+.team p {
+    margin: 0;
+    color: #555;
+    font-style: italic;
+}

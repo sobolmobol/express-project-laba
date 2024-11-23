@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/menu.css">
+</head>
+    <body>
+        {{> header}}
+        <main>
+            <section class="intro">
+                <h3 class="page-title">{{page-title}}</h3>
+                <p class="content">{{content}}</p>
+            </section>
+            {{#categories}}
+                <section class="menu-category">
+                    <h3 class="category-title">{{name}}</h3>
+                    <ul class="menu-items">
+                        {{#items}}
+                        <li class="menu-item">
+                            <div class="menu-item-header">
+                                <h4 class="item-name">{{name}}</h4>
+                                <span class="item-price">{{price}}</span>
+                            </div>
+                            <p class="item-description">{{description}}</p>
+                        </li>
+                        {{/items}}
+                    </ul>
+                </section>
+            {{/categories}}
+        </main>
+        {{> footer}}
+    </body>
+</html>

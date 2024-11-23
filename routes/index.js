@@ -18,4 +18,12 @@ router.get("/about", function(request, response){
     const data = loadData('about');
     response.render('about', data);
 });
+router.get("/menu", function(request, response){
+    const data = loadData('menu');
+    response.render('menu', data);
+});
+router.get("/gallery", function(request, response){
+    const data = loadData('gallery');
+    response.render('gallery', data);
+});
 module.exports = router;

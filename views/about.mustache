@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/about.css">
+</head>
+    <body>
+        {{> header}}
+        <main>
+            <section class="intro">
+                <div class="mission">
+                    <p>
+                        <h3 class="mission-title"> Наша миссия: </h3> 
+                        <p> {{mission}} </p> 
+                    </p>
+                </div>
+                <div class="info">
+                    <h3 class="page-title">{{page-title}}</p>
+                    <p class="content">{{content}}</p>
+                </div>
+            </section>
+            <h3>Наши услуги</h3>
+            <ul class="services">
+                {{#services}}
+                    <li>{{.}}</li>
+                {{/services}}
+            </ul>
+            <h3>Наши ценности</h3>
+            <ul class="values">
+                {{#values}}
+                    <li>{{.}}</li>
+                {{/values}}
+            </ul>
+            <h3>Наша команда</h3>
+            <div class="team">
+                {{#team}}
+                    <h3>{{title}}</h3>
+                    <p>{{descr}}</p>
+                {{/team}}
+            </div>
+        </main>
+        {{> footer}}
+    </body>
+</html>

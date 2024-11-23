@@ -10,18 +10,19 @@ body {
 header {
     background-color: #755A57;
     color: #ECF0F1; 
-    padding: 1.5rem 2rem;
+    padding: 5px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
-
-h2 {
-    font-size: 24px;
-    margin: 0;
-    font-weight: 700;
-    text-transform: uppercase;
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav {
@@ -47,11 +48,13 @@ nav a:hover {
 h1, h2 {
     font-size: 24px;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 h3 {
     font-size: 20px;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 a:active {
@@ -61,7 +64,7 @@ a:active {
 footer {
     background-color: #755A57;
     color: #ECF0F1;
-    padding: 1.5rem 2rem;
+    padding: 10px 15px;
     text-align: center;
     font-size: 14px;
 }
