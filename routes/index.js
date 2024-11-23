@@ -14,4 +14,8 @@ router.get("/", function(request, response){
     const data = loadData('main');
     response.render('main', data);
 });
+router.get("/about", function(request, response){
+    const data = loadData('about');
+    response.render('about', data);
+});
 module.exports = router;

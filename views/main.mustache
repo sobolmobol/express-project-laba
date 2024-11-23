@@ -5,10 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
     <body>
         {{> header}}
-        <p>{{page-title}}</p>
+        <main>
+            <section class="intro">
+                <h3 class="page-title">{{page-title}}</p>
+                <p class="content">{{content}}</p>
+            </section>
+        <section class="rules">
+            <h3>Правила заказа:</h2>
+            <ul>
+                {{#rules}}
+                    <li>{{.}}</li>
+                {{/rules}}
+            </ul>
+        </section>
+        </main>
         {{> footer}}
     </body>
 </html>

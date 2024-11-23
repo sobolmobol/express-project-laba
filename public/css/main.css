@@ -1,0 +1,37 @@
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.page-title {
+    color: #444343;
+    margin-bottom: 10px;
+}
+
+.content {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.rules h3 {
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.rules ul {
+    list-style: none;
+    padding: 0;
+}
+
+.rules ul li {
+    background: #755A57;
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
