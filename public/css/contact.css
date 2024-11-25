@@ -1,0 +1,145 @@
+.content {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    text-align: justify;
+    color: #555;
+}
+
+/* Стили для контактов */
+.contacts ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contacts ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.contacts a {
+    color: #755A57;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contacts a:hover {
+    text-decoration: underline;
+}
+
+.reviews {
+    margin-top: 30px;
+}
+
+.review {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f4f4f4;
+    border-left: 4px solid #755A57;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+    font-weight: 700;
+}
+
+.review .date {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.review .review-content {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+.reviews {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.reviews-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #444343;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Lato', Arial, sans-serif;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+    border-color: #755A57;
+    outline: none;
+    box-shadow: 0 0 4px rgba(117, 90, 87, 0.5);
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.form-submit {
+    background-color: #755A57;
+    color: #ECF0F1;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.form-submit:hover {
+    background-color: #5e4945;
+}
+
+.form-submit:active {
+    background-color: #40312f;
+}
+
+textarea {
+    resize: none;
+    font-family: 'Lato', Arial, sans-serif;
+}

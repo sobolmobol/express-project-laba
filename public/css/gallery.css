@@ -42,7 +42,6 @@
     text-transform: capitalize;
 }
 
-/* Адаптивность */
 @media (max-width: 600px) {
     .gallery {
         grid-template-columns: 1fr;
